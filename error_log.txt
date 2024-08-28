@@ -1,0 +1,6 @@
+[2024-08-17 06:38:05] Attempting to join session_id: 26 for user_id: 1
+[2024-08-17 06:38:05] User attempting to join their own game
+[2024-08-17 06:38:06] Attempting to join session_id: 26 for user_id: 1
+[2024-08-17 06:38:06] User attempting to join their own game
+[2024-08-17 06:38:07] Attempting to join session_id: 26 for user_id: 1
+[2024-08-17 06:38:07] User attempting to join their own game

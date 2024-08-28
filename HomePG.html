@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo1.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Home Page</title>
+    <style>
+        .loader{
+            position: relative;
+            height: 350px;
+            width: 350px;
+            animation: spin 1.5s infinite;
+            z-index: 1100;
+            transition: opacity 3.8s, visibility 3.6s;
+        }
+        .loaderBg{
+            background-color:#010326;
+            padding: 0;
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center center;
+            z-index: 1009;
+            transition: opacity 4s, visibility 3.8s;
+        }
+        @keyframes spin{
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .loader--hidden{
+            opacity:0;
+            visibility: hidden;
+        }
+        .loaderBg--hidden{
+            opacity:0;
+            visibility: hidden;
+        }
+        .loader>div:nth-child(1){
+            z-index: 1100;
+            height:75px;
+            width: 75px;
+            background-image: linear-gradient(
+                45deg,
+                #DF564A,
+                #DFB54A
+            );
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            box-shadow: 0 0 3px #DF564A;
+            border-radius: 50%;
+            animation: move1 1.5s infinite;
+        }
+        @keyframes move1{
+            50%{
+                transform: translate(-30px,-30px) scale(0.3);
+            }
+        }
+        .loader>div:nth-child(2){
+            z-index: 1100;
+            height:45px;
+            width: 45px;
+            background-image: linear-gradient(
+                45deg,
+                #F2DC91,
+                #F4D08A
+            );
+            position: absolute;
+            top: 105px;
+            right: 110px;
+            box-shadow: 0 0 2px #F2DC91;
+            border-radius: 50%;
+            animation: move2 1.5s infinite;
+        }
+        @keyframes move2{
+            50%{
+                transform: translate(15px,-20px) scale(0.55);
+            }
+        }
+        .loader>div:nth-child(3){
+            z-index: 1100;
+            height:75px;
+            width: 75px;
+            background-image: linear-gradient(
+                45deg,
+                #D99E6A,
+                #D5D9AD
+            );
+            position: absolute;
+            bottom: 100px;
+            right: 100px;
+            box-shadow: 0 0 3px #D99E6A;
+            border-radius: 50%;
+            animation: move3 1.5s infinite;
+        }
+        @keyframes move3{
+            50%{
+                transform: translate(30px,30px) scale(0.3);
+            }
+        }
+        .loader>div:nth-child(4){
+            z-index: 1100;
+            height:45px;
+            width: 45px;
+            background-image: linear-gradient(
+                45deg,
+                #B6D9AD,
+                #CDB667
+            );
+            position: absolute;
+            bottom: 105px;
+            left: 110px;
+            box-shadow: 0 0 3px #B6D9AD;
+            border-radius: 50%;
+            animation: move4 1.5s infinite;
+        }
+        @keyframes move4{
+            50%{
+                transform: translate(-15px,20px) scale(0.55);
+            }
+        }
+        
+        
+    </style>
+    <script>
+        window.addEventListener("load", ()=>{
+            const loader = document.querySelector(".loader");
+
+            loader.classList.add("loader--hidden");
+
+            loader.addEventListener("transitionend", () => {
+                document.body.removeChild(loader);
+            });
+        });
+        window.addEventListener("load", ()=>{
+            const loaderBg = document.querySelector(".loaderBg");
+
+            loaderBg.classList.add("loaderBg--hidden");
+
+            loaderBg.addEventListener("transitionend", () => {
+                document.body.removeChild(loaderBg);
+            });
+        });
+    </script>
+    </style>
+</head>
+<body>
+    <div class="loaderBg">
+        <div class="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <audio autoplay loop>
+        <source src="cruising-down-8bit-lane-159615.mp3" type="audio/mp3">
+    <div class="cursor"></div>
+    <script>
+        const cursor = document.querySelector('.cursor');
+
+        document.addEventListener('mousemove', e => {
+            cursor.setAttribute("style", "top: "+(e.pageY - 11)+"px; left: "+(e.pageX - 10)+"px")
+        })
+    </script>
+    </audio>
+    
+    <section>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </section>
+        <h1 class="h1hmg">Welcome To GimKit</h1>
+        <p class="h4">The gamified e-learning system with mathematics as the subject for Undergraduate Students.</p>
+        <p class="h5"> Let's have fun learning!</p>
+        <a href="login.html" class="loginbtn">
+            <button style="background:none; border:none; color: #d8c790; font-size:60px;">Login</button>
+        </a>
+        <h3 class="design1"><img class="animation2" src="Untitled_Artwork.gif" alt="Animated Image"></h3>
+</body>
+</html>
+
+
